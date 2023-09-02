@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PH Tube</title>
+    <link rel="shortcut icon" href="./images/Logo.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.2/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="mx-12 mt-12">
+    <header>
+        <div class=" flex items-center gap-5 flex-col lg:flex-row justify-between">
+          <img src="./images/Logo.png" alt="">
+          <button class="btn bg-gray-300 hover:bg-red-500 hover:text-white text-center text-lg font-semibold">Short by view</button>
+          <a href="answer.html" target="_blank"><button class="btn bg-gray-300 hover:bg-red-500 hover:text-white text-center text-lg font-semibold">Blog</button></a>
+        </div>
+        <hr class="my-8 h-px">
+        <div id="category-container" class="flex flex-col md:flex-row lg:flex-row justify-center items-center gap-4 lg:gap-8">
+        </div>
+    </header>
+    <main>
+        <div id="categories-cards-container" class="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+        </div>
+        <div id="noData" class="flex flex-col items-center text-center mt-16 gap-4">
+          <img src="./images/Icon.png" alt="No Data Available" id="noDataImg" class="hidden w-36">
+          <p id="noAvailable" class="text-xl font-semibold hidden">Oops!! Sorry, There is no content here</p>
+        </div>
+    </main>
+    <footer></footer>
+    <script src="./js/index.js"></script>
+</body>
+</html>
